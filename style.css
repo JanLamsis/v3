@@ -24,25 +24,6 @@ body::-webkit-scrollbar{
       }
 }
 
-/*--------------- rotating effect --------------- */
-@keyframes spin{
-      0%{
-          transform: rotate(0deg);
-      }
-      100%{
-          transform: rotate(360deg);
-      }
-  }
-  
-  @keyframes spin2{
-      0%{
-          transform: rotate(360deg);
-      }
-      100%{
-          transform: rotate(0deg);
-      }
-  }
-
 /*--------------- typewriter effect --------------- */
 .line {
       width: 24em;
@@ -278,15 +259,14 @@ nav #menu li a:hover {
 }
 
 .hero a {
-      position: absolute;
-      left: 49%;
-      top: 60%;
       font-size: 1em;
       letter-spacing: 5px;
       color: white;
+      position: relative;
+      left: 44%;
 }
 
-.hero a:link{
+.hero a:link {
       text-decoration: none;
 }
 
@@ -295,8 +275,12 @@ nav #menu li a:hover {
 }
 
 @media(max-width: 768px) {
-      .header h1, .header h2 {
-            font-size: 26px;
+      .header h1 {
+            font-size: 35px;
+      }
+
+      .header h2, .hero a{
+            font-size: 10px;
       }
 }
 
